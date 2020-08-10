@@ -1,0 +1,40 @@
+/*
+
+var c=1 
+while (c<=10){
+    console.log(`tudo becm!${c}`)
+    c++
+}
+
+
+var c=1
+
+do {
+    console.log(`teste passo ${c}`)
+    c++
+}while(c<=10)
+
+
+ESTRUTURA FOR
+                EX:
+                for (inicio;teste;incr){
+                    bloco de execução se o teste der verdeiro
+                }
+                segue o codigo se for falso  cai aqui
+
+
+console.log('vai iniciar o codigo')
+for (c=1; c<=10;c++){
+    console.log(`teste passo do for ${c}`)
+}
+console.log('Terminou o codigo')
+*/
+
+var c=1 
+var fim =12
+var passo = 2
+
+while (c<=fim){
+    console.log(`tudo becm!${c}`)
+    c+2
+}

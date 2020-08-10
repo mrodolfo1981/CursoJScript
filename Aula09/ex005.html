@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com o DOM</title>
+    <Style>
+        body{
+            background: rgb(135, 148, 223);
+            color: gold;
+            font: normal 18pr Arial;
+
+        }
+            
+        
+    </Style>
+    </head>
+<body>
+    <h1> Iniciando Estudos com DOM </h1>
+        <p> Aqui vai o resultado</p>
+        <p> Aprendendo a usar o <strong> DOM </strong> em JavaScript.</p>
+        <div id="msg">Clique em mim </div>
+        <script>
+            //o uso do window e opcional 
+
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[0] 
+
+            /*window.document.write('Esta escrito assim :'+p1.innerText)
+            var d = window.document.getElementById('msg')  por id
+            d.style.background ='green'
+            d.innerText ='Estou aguardando...'
+            
+            var d = window.document.getElementsByName('msg')[0] por nomw
+            d.innerText = 'Ola'
+            */
+            var d = window.document.querySelector('div#msg')//qundo usar id div usar # clase usar ponto .
+            d.style.color = 'blue'//mudou a cor da fonte da mensagem 
+            d.style.background = 'pink' //muda a cor do fundo da mensagem
+
+        </script>
+
+
+</body>
+</html>

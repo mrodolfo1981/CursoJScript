@@ -41,7 +41,7 @@ for ( let pos in valores){
 }
 
 // comando que faz busca em vetores "indexOf" o valor que vc busca fica dentro do "()" no exenplo
-//a baixo foi buscado o valor 8 
+//a baixo foi buscado o valor contido na variavel item .
 
 var item =6
 let posicao = valores.indexOf(item)

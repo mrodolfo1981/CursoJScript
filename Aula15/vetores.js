@@ -33,16 +33,16 @@ for(let pos=0; pos < valores.length; pos++){
 
 // for mais simples para uso em vetores
 
-let valores=[5,8,2,9,3,1,7]
-valores.sort()
-for ( let pos in valores){
-    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+//let valores=[5,8,2,9,3,1,7]
+//valores.sort()
+//for ( let pos in valores){
+   // console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 
-}
+//}
 
 // comando que faz busca em vetores "indexOf" o valor que vc busca fica dentro do "()" no exenplo
 //a baixo foi buscado o valor contido na variavel item .
-
+/*
 var item =6
 let posicao = valores.indexOf(item)
 
@@ -51,3 +51,19 @@ if(posicao==-1){
 }else{
     console.log(`O valor ${item}  esta  na posição ${posicao}`)
 }
+*/
+
+
+
+// Funcao para retornar o menor valor de um array
+Array.min = function(array) {
+    return Math.min.apply(Math, array)
+};
+
+// Funcao para retornar o maior valor de um array
+Array.max = function(array) {
+    return Math.max.apply(Math, array)
+};
+
+valores=[5,8,2,9,3,1,7]
+console.log(Array.max(valores))
